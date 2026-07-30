@@ -3,9 +3,9 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <VSEOCLASS>
-    <CLSNAME>ZCL_TALLER_BICIS_03</CLSNAME>
+    <CLSNAME>ZCL_ATRACCION_FERIA_03</CLSNAME>
     <LANGU>E</LANGU>
-    <DESCRIPT>Clase taller de bicis</DESCRIPT>
+    <DESCRIPT>Clase hija de ATRACCION2</DESCRIPT>
     <STATE>1</STATE>
     <CLSCCINCL>X</CLSCCINCL>
     <FIXPT>X</FIXPT>
