@@ -25,25 +25,29 @@ CLASS zcl_prueba_calculadora_03 DEFINITION
 ENDCLASS.
 
 
-CLASS zcl_prueba_calculadora_03 IMPLEMENTATION.
+
+CLASS ZCL_PRUEBA_CALCULADORA_03 IMPLEMENTATION.
+
 
   METHOD sumar.
     " Atributo = Suma de parametros de entrada
     resultado = i_num1 + i_num2.
   ENDMETHOD.
 
+
   METHOD division.
     o_div = i_num1 / i_num2.
     o_res = i_num1 MOD i_num2.
   ENDMETHOD.
+
 
   METHOD mostrar_resultado_e.
     " Parametro de salida = atributo
     o_resultado = resultado.
   ENDMETHOD.
 
+
   METHOD mostrar_resultado_r.
     rv_resultado = resultado.
   ENDMETHOD.
-
 ENDCLASS.

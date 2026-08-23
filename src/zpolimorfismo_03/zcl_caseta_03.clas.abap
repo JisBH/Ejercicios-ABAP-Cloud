@@ -14,15 +14,15 @@ ENDCLASS.
 
 
 
-CLASS zcl_caseta_03 IMPLEMENTATION.
+CLASS ZCL_CASETA_03 IMPLEMENTATION.
+
 
   METHOD constructor.
     super->constructor( i_nombre = i_nombre_caseta ).
   ENDMETHOD.
 
+
   METHOD pedir_rebujito.
     rv_mensaje = 'Se ha pedido un rebujito'.
   ENDMETHOD.
-
-
 ENDCLASS.

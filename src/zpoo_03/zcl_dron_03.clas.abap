@@ -29,7 +29,8 @@ ENDCLASS.
 
 
 
-CLASS zcl_dron_03 IMPLEMENTATION.
+CLASS ZCL_DRON_03 IMPLEMENTATION.
+
 
   METHOD constructor.
     me->carga_max = i_carga_max.
@@ -100,5 +101,4 @@ CLASS zcl_dron_03 IMPLEMENTATION.
     o_carga_actual = me->carga_actual.
     o_modo_reserva = me->modo_reserva.
   ENDMETHOD.
-
 ENDCLASS.

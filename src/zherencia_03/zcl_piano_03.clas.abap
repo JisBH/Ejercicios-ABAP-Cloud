@@ -17,12 +17,14 @@ ENDCLASS.
 
 
 
-CLASS zcl_piano_03 IMPLEMENTATION.
+CLASS ZCL_PIANO_03 IMPLEMENTATION.
+
 
   METHOD constructor.
     super->constructor( i_marca = i_marca_piano ).
     me->electrico = i_electrico.
   ENDMETHOD.
+
 
   METHOD pedalear.
     IF me->horas_uso >= 1.
@@ -32,5 +34,4 @@ CLASS zcl_piano_03 IMPLEMENTATION.
     ENDIF.
 
   ENDMETHOD.
-
 ENDCLASS.

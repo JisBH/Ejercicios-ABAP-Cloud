@@ -18,27 +18,31 @@ ENDCLASS.
 
 
 
-CLASS zcl_atraccion_03 IMPLEMENTATION.
+CLASS ZCL_ATRACCION_03 IMPLEMENTATION.
+
 
   METHOD constructor.
     me->nombre = i_nombre.
     me->num_visitantes = 0.
   ENDMETHOD.
 
+
   METHOD calcular_precio_entrada.
     rv_importe = 0.
   ENDMETHOD.
+
 
   METHOD consultar_visitantes.
     rv_num_visitantes = me->num_visitantes.
   ENDMETHOD.
 
+
   METHOD recibir_visitante.
     me->num_visitantes += 1.
   ENDMETHOD.
 
+
   METHOD consultar_nombre.
     rv_nombre = me->nombre.
   ENDMETHOD.
-
 ENDCLASS.

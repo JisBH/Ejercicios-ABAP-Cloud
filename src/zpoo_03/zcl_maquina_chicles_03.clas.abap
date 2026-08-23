@@ -20,12 +20,14 @@ ENDCLASS.
 
 
 
-CLASS zcl_maquina_chicles_03 IMPLEMENTATION.
+CLASS ZCL_MAQUINA_CHICLES_03 IMPLEMENTATION.
+
 
   METHOD constructor.
     me->chicles_restantes = iv_num_chicles.
     me->precio = 25.
   ENDMETHOD.
+
 
   METHOD vender_chicle.
     if iv_moneda >= me->precio AND me->chicles_restantes > 0.
@@ -38,8 +40,8 @@ CLASS zcl_maquina_chicles_03 IMPLEMENTATION.
 
   ENDMETHOD.
 
+
   METHOD consultar_stock.
     rv_stock = me->chicles_restantes.
   ENDMETHOD.
-
 ENDCLASS.

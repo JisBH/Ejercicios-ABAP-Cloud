@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_vuelos_03 IMPLEMENTATION.
+CLASS ZCL_VUELOS_03 IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.

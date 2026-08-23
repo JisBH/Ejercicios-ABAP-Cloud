@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_prueba_main_avion_03 IMPLEMENTATION.
+CLASS ZCL_PRUEBA_MAIN_AVION_03 IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.

@@ -16,17 +16,16 @@ ENDCLASS.
 
 
 
-CLASS zcl_atraccion_feria_03 IMPLEMENTATION.
+CLASS ZCL_ATRACCION_FERIA_03 IMPLEMENTATION.
+
 
   METHOD constructor.
     super->constructor( i_nombre = i_nombre_atraccion_feria ).
     me->precio_atraccion = i_precio.
   ENDMETHOD.
 
+
   METHOD calcular_precio_entrada.
     rv_importe = precio_atraccion.
   ENDMETHOD.
-
-
-
 ENDCLASS.

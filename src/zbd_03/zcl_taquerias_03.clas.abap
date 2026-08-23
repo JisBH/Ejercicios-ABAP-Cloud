@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_taquerias_03 IMPLEMENTATION.
+CLASS ZCL_TAQUERIAS_03 IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.

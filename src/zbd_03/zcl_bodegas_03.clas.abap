@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_bodegas_03 IMPLEMENTATION.
+CLASS ZCL_BODEGAS_03 IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.

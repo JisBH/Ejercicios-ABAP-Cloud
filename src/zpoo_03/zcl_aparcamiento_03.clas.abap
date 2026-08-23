@@ -18,10 +18,11 @@ ENDCLASS.
 
 
 
-CLASS zcl_aparcamiento_03 IMPLEMENTATION.
+CLASS ZCL_APARCAMIENTO_03 IMPLEMENTATION.
+
+
   METHOD calcular_tarifa.
     ev_minutos_totales = iv_horas_estacionado * 60.
     rv_precio = iv_horas_estacionado * 5.
   ENDMETHOD.
-
 ENDCLASS.

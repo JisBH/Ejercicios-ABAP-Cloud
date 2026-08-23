@@ -15,11 +15,13 @@ ENDCLASS.
 
 
 
-CLASS zcl_chiringuito_bebidas_03 IMPLEMENTATION.
+CLASS ZCL_CHIRINGUITO_BEBIDAS_03 IMPLEMENTATION.
+
 
   METHOD anadir_hielo.
 
   ENDMETHOD.
+
 
   METHOD vender_bebida.
     IF i_importe >= '1.5'.
@@ -28,5 +30,4 @@ CLASS zcl_chiringuito_bebidas_03 IMPLEMENTATION.
     ENDIF.
     rv_exito = abap_false.
   ENDMETHOD.
-
 ENDCLASS.

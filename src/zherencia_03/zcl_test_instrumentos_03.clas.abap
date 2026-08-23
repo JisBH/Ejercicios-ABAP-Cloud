@@ -15,7 +15,9 @@ CLASS zcl_test_instrumentos_03 DEFINITION
 ENDCLASS.
 
 
-CLASS zcl_test_instrumentos_03 IMPLEMENTATION.
+
+CLASS ZCL_TEST_INSTRUMENTOS_03 IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
 
@@ -64,5 +66,4 @@ CLASS zcl_test_instrumentos_03 IMPLEMENTATION.
       me->lr_out->write( 'El metodo ha fallado' ).
     ENDIF.
   ENDMETHOD.
-
 ENDCLASS.

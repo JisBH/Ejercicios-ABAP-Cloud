@@ -11,7 +11,8 @@ ENDCLASS.
 
 
 
-CLASS zcl_union_tablas IMPLEMENTATION.
+CLASS ZCL_UNION_TABLAS IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
 
@@ -193,6 +194,4 @@ CLASS zcl_union_tablas IMPLEMENTATION.
 
 
   ENDMETHOD.
-
 ENDCLASS.
-

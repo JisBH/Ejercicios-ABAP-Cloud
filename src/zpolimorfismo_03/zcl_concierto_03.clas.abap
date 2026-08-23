@@ -14,11 +14,13 @@ ENDCLASS.
 
 
 
-CLASS zcl_concierto_03 IMPLEMENTATION.
+CLASS ZCL_CONCIERTO_03 IMPLEMENTATION.
+
 
   METHOD constructor.
     super->constructor( i_nombre = i_nombre_concierto ).
   ENDMETHOD.
+
 
   METHOD calcular_precio_entrada.
     IF consultar_visitantes(  ) < 500.
@@ -27,5 +29,4 @@ CLASS zcl_concierto_03 IMPLEMENTATION.
       rv_importe = 5.
     ENDIF.
   ENDMETHOD.
-
 ENDCLASS.

@@ -12,9 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_prueba_main_calculadora_03 IMPLEMENTATION.
-
-
+CLASS ZCL_PRUEBA_MAIN_CALCULADORA_03 IMPLEMENTATION.
 
 
     METHOD if_oo_adt_classrun~main.

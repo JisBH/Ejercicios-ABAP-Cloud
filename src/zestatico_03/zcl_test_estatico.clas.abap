@@ -12,7 +12,8 @@ ENDCLASS.
 
 
 
-CLASS zcl_test_estatico IMPLEMENTATION.
+CLASS ZCL_TEST_ESTATICO IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
     DATA(lo_estatico) = NEW zcl_estatico_03( 'Soy el objeto 1' ).

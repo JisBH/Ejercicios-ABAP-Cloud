@@ -17,16 +17,16 @@ ENDCLASS.
 
 
 
-CLASS zcl_estatico_03 IMPLEMENTATION.
+CLASS ZCL_ESTATICO_03 IMPLEMENTATION.
+
+
+  METHOD consultar_contador.
+    rv_contador = contador.
+  ENDMETHOD.
 
 
   METHOD constructor.
     saludo = i_saludo.
     contador += 1.
   ENDMETHOD.
-
-  METHOD consultar_contador.
-    rv_contador = contador.
-  ENDMETHOD.
-
 ENDCLASS.

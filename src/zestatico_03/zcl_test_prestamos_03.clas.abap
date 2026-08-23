@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_test_prestamos_03 IMPLEMENTATION.
+CLASS ZCL_TEST_PRESTAMOS_03 IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.

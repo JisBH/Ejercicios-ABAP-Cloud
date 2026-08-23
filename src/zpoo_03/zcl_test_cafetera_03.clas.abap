@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_test_cafetera_03 IMPLEMENTATION.
+CLASS ZCL_TEST_CAFETERA_03 IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.

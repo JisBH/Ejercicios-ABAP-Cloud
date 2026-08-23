@@ -19,12 +19,14 @@ ENDCLASS.
 
 
 
-CLASS zcl_mascota_03 IMPLEMENTATION.
+CLASS ZCL_MASCOTA_03 IMPLEMENTATION.
+
 
   METHOD constructor.
     me->energia = 100.
     me->lleno = 0.
   ENDMETHOD.
+
 
   METHOD comer.
     IF lleno + 20 <= 100.
@@ -33,6 +35,7 @@ CLASS zcl_mascota_03 IMPLEMENTATION.
       me->lleno = 100.
     ENDIF.
   ENDMETHOD.
+
 
   METHOD jugar.
     IF me->energia >= 20.
@@ -51,9 +54,9 @@ CLASS zcl_mascota_03 IMPLEMENTATION.
     ENDIF.
   ENDMETHOD.
 
+
   METHOD consultar_estado.
     ov_energia = me->energia.
     ov_lleno = me->lleno.
   ENDMETHOD.
-
 ENDCLASS.

@@ -11,7 +11,8 @@ ENDCLASS.
 
 
 
-CLASS zcl_test_deposito_03 IMPLEMENTATION.
+CLASS ZCL_TEST_DEPOSITO_03 IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
 
@@ -31,5 +32,4 @@ CLASS zcl_test_deposito_03 IMPLEMENTATION.
 
     out->write( |Nivel del deposito: { lo_deposito->consultar_nivel(  ) }| ).
   ENDMETHOD.
-
 ENDCLASS.

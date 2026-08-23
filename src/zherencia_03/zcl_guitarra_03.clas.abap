@@ -18,12 +18,14 @@ ENDCLASS.
 
 
 
-CLASS zcl_guitarra_03 IMPLEMENTATION.
+CLASS ZCL_GUITARRA_03 IMPLEMENTATION.
+
 
   METHOD constructor.
     super->constructor( i_marca = i_marca_guitarra ).
     me->num_cuerdas = i_num_cuerdas.
   ENDMETHOD.
+
 
   METHOD afinar_cuerda.
     IF i_num_cuerdas > 0 AND i_num_cuerdas <= me->num_cuerdas.
@@ -33,5 +35,4 @@ CLASS zcl_guitarra_03 IMPLEMENTATION.
     ENDIF.
 
   ENDMETHOD.
-
 ENDCLASS.

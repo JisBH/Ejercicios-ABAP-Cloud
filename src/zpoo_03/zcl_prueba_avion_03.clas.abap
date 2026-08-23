@@ -20,12 +20,14 @@ ENDCLASS.
 
 
 
-CLASS zcl_prueba_avion_03 IMPLEMENTATION.
+CLASS ZCL_PRUEBA_AVION_03 IMPLEMENTATION.
+
 
  METHOD constructor.
     asientos_max = i_asientos_max.
     asientos_ocu = 0.
   ENDMETHOD.
+
 
   METHOD embarcar_pasajero.
     IF asientos_max > asientos_ocu.
@@ -33,8 +35,8 @@ CLASS zcl_prueba_avion_03 IMPLEMENTATION.
     ENDIF.
   ENDMETHOD.
 
+
   METHOD get_ocupacion.
     rv_ocupacion = asientos_ocu.
   ENDMETHOD.
-
 ENDCLASS.

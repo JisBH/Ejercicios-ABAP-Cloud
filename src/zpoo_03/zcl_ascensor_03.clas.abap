@@ -20,7 +20,8 @@ ENDCLASS.
 
 
 
-CLASS zcl_ascensor_03 IMPLEMENTATION.
+CLASS ZCL_ASCENSOR_03 IMPLEMENTATION.
+
 
   METHOD constructor.
     me->planta_max = iv_planta_max.
@@ -30,8 +31,8 @@ CLASS zcl_ascensor_03 IMPLEMENTATION.
     me->bloqueado_sobrepeso = abap_false.
   ENDMETHOD.
 
+
   METHOD entrar_peso.
 
   ENDMETHOD.
-
 ENDCLASS.

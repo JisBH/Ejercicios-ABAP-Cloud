@@ -17,25 +17,28 @@ ENDCLASS.
 
 
 
-CLASS zcl_chiringuitos_03 IMPLEMENTATION.
+CLASS ZCL_CHIRINGUITOS_03 IMPLEMENTATION.
+
 
   METHOD constructor.
     me->nombre = i_nombre.
     me->dinero = 0.
   ENDMETHOD.
 
+
   METHOD calcular_comision_ayuntamiento.
     rv_importe = me->dinero * '0.1'.
   ENDMETHOD.
 
+
   METHOD consultar_recaudacion.
     rv_dinero = me->dinero.
   ENDMETHOD.
+
 
   METHOD vender.
     IF i_importe > 0.
       me->dinero += i_importe.
     ENDIF.
   ENDMETHOD.
-
 ENDCLASS.

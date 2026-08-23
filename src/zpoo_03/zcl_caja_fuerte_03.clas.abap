@@ -27,7 +27,8 @@ ENDCLASS.
 
 
 
-CLASS zcl_caja_fuerte_03 IMPLEMENTATION.
+CLASS ZCL_CAJA_FUERTE_03 IMPLEMENTATION.
+
 
   METHOD constructor.
     codigo_correcto = iv_cod_apertura.
@@ -59,6 +60,7 @@ CLASS zcl_caja_fuerte_03 IMPLEMENTATION.
     rv_bloqueada = bloqueada.
   ENDMETHOD.
 
+
   METHOD cambiar_contrasenha.
     IF iv_cod_antiguo = codigo_correcto.
       codigo_correcto = iv_cod_nuevo.
@@ -68,5 +70,4 @@ CLASS zcl_caja_fuerte_03 IMPLEMENTATION.
       rv_contrasenha_cambiada = abap_false.
     ENDIF.
   ENDMETHOD.
-
 ENDCLASS.

@@ -27,7 +27,9 @@ CLASS zcl_taller_bicis_03 DEFINITION
 ENDCLASS.
 
 
-CLASS zcl_taller_bicis_03 IMPLEMENTATION.
+
+CLASS ZCL_TALLER_BICIS_03 IMPLEMENTATION.
+
 
   METHOD registrar_reparacion.
     DATA: lv_max_id TYPE n LENGTH 10.
@@ -99,5 +101,4 @@ CLASS zcl_taller_bicis_03 IMPLEMENTATION.
     ENDIF.
 
   ENDMETHOD.
-
 ENDCLASS.

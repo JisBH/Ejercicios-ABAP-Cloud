@@ -20,16 +20,19 @@ ENDCLASS.
 
 
 
-CLASS zcl_deposito_03 IMPLEMENTATION.
+CLASS ZCL_DEPOSITO_03 IMPLEMENTATION.
+
 
   METHOD constructor.
     me->litros_actuales = 0.
     me->capacidad_maxima = i_capacidad.
   ENDMETHOD.
 
+
   METHOD consultar_nivel.
     rv_litros = me->litros_actuales.
   ENDMETHOD.
+
 
   METHOD despachar_combustible.
     IF me->litros_actuales - i_litros > 0.
@@ -41,6 +44,7 @@ CLASS zcl_deposito_03 IMPLEMENTATION.
     ENDIF.
   ENDMETHOD.
 
+
   METHOD repostar_deposito.
     IF me->litros_actuales + i_litros > me->capacidad_maxima.
       me->litros_actuales = me->capacidad_maxima.
@@ -48,5 +52,4 @@ CLASS zcl_deposito_03 IMPLEMENTATION.
       me->litros_actuales += i_litros.
     ENDIF.
   ENDMETHOD.
-
 ENDCLASS.

@@ -10,7 +10,9 @@ CLASS zcl_test_chiringuitos_03 DEFINITION
 ENDCLASS.
 
 
-CLASS zcl_test_chiringuitos_03 IMPLEMENTATION.
+
+CLASS ZCL_TEST_CHIRINGUITOS_03 IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
     "Crear un chiringuito de bebidas
@@ -46,5 +48,4 @@ CLASS zcl_test_chiringuitos_03 IMPLEMENTATION.
 
 
   ENDMETHOD.
-
 ENDCLASS.
