@@ -1,0 +1,55 @@
+managed implementation in class ZBP_R_PENALTI_03 unique;
+strict ( 2 );
+with draft;
+extensible;
+define behavior for ZR_PENALTI_03 alias ZrPenalti03
+persistent table zpenalti_03
+extensible
+draft table zpenalti_03_d
+etag master LastChangedAt
+lock master total etag LocalLastChangedAt
+authorization master ( global )
+early numbering // para obtener la clave de la nueva instancia durante su fase temprana de creacion
+{
+
+  field ( readonly )
+  Resultado,
+  NumLanzamiento,
+  CreatedBy,
+  CreatedAt,
+  LastChangedBy,
+  LastChangedAt,
+  LocalLastChangedAt;
+
+
+  create;
+  update;
+  delete;
+
+  determination calcula_resultado on save
+  {
+    create;
+  }
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for zpenalti_03 corresponding extensible
+    {
+      NumLanzamiento     = NUM_LANZAMIENTO;
+      Lanzador           = LANZADOR;
+      DireccionDisparo   = DIRECCION_DISPARO;
+      Portero            = PORTERO;
+      DireccionPortero   = DIRECCION_PORTERO;
+      Resultado          = RESULTADO;
+      CreatedBy          = CREATED_BY;
+      CreatedAt          = CREATED_AT;
+      LastChangedBy      = LAST_CHANGED_BY;
+      LastChangedAt      = LAST_CHANGED_AT;
+      LocalLastChangedAt = LOCAL_LAST_CHANGED_AT;
+    }
+
+}

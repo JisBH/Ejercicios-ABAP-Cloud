@@ -1,4 +1,4 @@
-INTERFACE zif_describible_03
-  PUBLIC .
-  METHODS describir RETURNING VALUE(rv_texto) TYPE string.
-ENDINTERFACE.
+interface ZIF_DESCRIBIBLE_03
+  public .
+
+endinterface.

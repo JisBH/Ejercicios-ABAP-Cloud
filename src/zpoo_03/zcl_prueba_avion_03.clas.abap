@@ -1,42 +1,13 @@
-CLASS zcl_prueba_avion_03 DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_PRUEBA_AVION_03 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-
-    METHODS:
-      constructor IMPORTING i_asientos_max TYPE i,
-      embarcar_pasajero,
-      get_ocupacion RETURNING VALUE(rv_ocupacion) TYPE i.
-
-  PROTECTED SECTION.
-  PRIVATE SECTION.
-
-    DATA: asientos_ocu TYPE i.
-    DATA: asientos_max TYPE i.
-
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
 CLASS ZCL_PRUEBA_AVION_03 IMPLEMENTATION.
-
-
- METHOD constructor.
-    asientos_max = i_asientos_max.
-    asientos_ocu = 0.
-  ENDMETHOD.
-
-
-  METHOD embarcar_pasajero.
-    IF asientos_max > asientos_ocu.
-      asientos_ocu += 1.
-    ENDIF.
-  ENDMETHOD.
-
-
-  METHOD get_ocupacion.
-    rv_ocupacion = asientos_ocu.
-  ENDMETHOD.
 ENDCLASS.

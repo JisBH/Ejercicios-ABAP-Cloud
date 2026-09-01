@@ -1,20 +1,13 @@
-CLASS zcl_bombilla_03 DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class ZCL_BOMBILLA_03 definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-  Methods encender.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
 CLASS ZCL_BOMBILLA_03 IMPLEMENTATION.
-
-
-METHOD encender.
-
-ENDMETHOD.
 ENDCLASS.

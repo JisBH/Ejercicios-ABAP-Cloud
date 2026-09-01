@@ -1,0 +1,104 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'NumLanzamiento'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'NumLanzamiento'
+annotate view ZC_PENALTI_03 with
+{
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @EndUserText.label: 'Num_Lanzamiento'
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'Num_Lanzamiento'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'Num_Lanzamiento'
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  NumLanzamiento;
+  
+  @UI.identification: [ {
+    position: 20 
+  } ]
+  @UI.lineItem: [ {
+    position: 20 
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  Lanzador;
+  
+  @EndUserText.label: 'Dir_disparo'
+  @UI.identification: [ {
+    position: 30 
+  } ]
+  @UI.lineItem: [ {
+    position: 30 
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  @Consumption.valueHelpDefinition: [{
+    entity: {
+      name: 'ZL_DESPLEGABLE',
+      element: 'Direccion'
+    }
+  }]
+  DireccionDisparo;
+  
+  @UI.identification: [ {
+    position: 40 
+  } ]
+  @UI.lineItem: [ {
+    position: 40 
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  Portero;
+  
+  @EndUserText.label: 'Dir_Portero'
+  @UI.identification: [ {
+    position: 50 
+  } ]
+  @UI.lineItem: [ {
+    position: 50 
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+   @Consumption.valueHelpDefinition: [{
+    entity: {
+      name: 'ZL_DESPLEGABLE',
+      element: 'Direccion'
+    }
+  }]
+  DireccionPortero;
+  
+  @UI.identification: [ {
+    position: 60, 
+    criticality: 'Color',
+    criticalityRepresentation: #WITHOUT_ICON ,
+    label: 'Resultado'
+  } ]
+  @UI.lineItem: [ {
+    position: 60,
+    criticality: 'Color',
+    criticalityRepresentation: #WITHOUT_ICON , 
+    label: 'Resultado'
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  Resultado;
+  
+}

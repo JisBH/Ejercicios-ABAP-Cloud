@@ -1,6 +1,0 @@
-@EndUserText.label: 'ZR_DBEMBARAZO_03'
-@MappingRole: true
-define role ZR_DBEMBARAZO_03 {
-  grant select on ZR_DBEMBARAZO_03
-  where TRUE;
-}

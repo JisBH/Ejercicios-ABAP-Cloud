@@ -1,8 +1,6 @@
 class ZBP_C_DBEMBARAZO_03 definition
   public
-  abstract
-  final
-  for behavior of ZC_DBEMBARAZO_03 .
+  create private .
 
 public section.
 protected section.
