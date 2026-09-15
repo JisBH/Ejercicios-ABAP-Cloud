@@ -1,0 +1,45 @@
+managed implementation in class zbp_r_vehiculo_03 unique;
+strict ( 2 );
+with draft;
+extensible;
+define behavior for ZR_VEHICULO_03 alias ZrVehiculo03
+persistent table zvehiculo_03
+extensible
+draft table zvehiculo_03_d
+etag master LastChangedAt
+lock master total etag LocalLastChangedAt
+authorization master ( global )
+{
+
+  field ( readonly )
+  Matricula,
+  CreatedBy,
+  CreatedAt,
+  LastChangedBy,
+  LastChangedAt,
+  LocalLastChangedAt;
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for zvehiculo_03 corresponding extensible
+    {
+      Matricula          = MATRICULA;
+      Modelo             = MODELO;
+      Estado             = ESTADO;
+      Anio               = ANIO;
+      CreatedBy          = CREATED_BY;
+      CreatedAt          = CREATED_AT;
+      LastChangedBy      = LAST_CHANGED_BY;
+      LastChangedAt      = LAST_CHANGED_AT;
+      LocalLastChangedAt = LOCAL_LAST_CHANGED_AT;
+    }
+
+}

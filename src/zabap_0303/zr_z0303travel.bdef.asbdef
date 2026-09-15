@@ -1,0 +1,57 @@
+managed implementation in class ZBP_R_Z0303TRAVEL unique;
+strict ( 2 );
+with draft;
+extensible;
+define behavior for ZR_Z0303TRAVEL alias ZrZ0303travel
+persistent table ZZ0303TRAVEL
+extensible
+draft table ZZ0303TRAVEL_D
+etag master LastChangedAt
+lock master total etag LocalLastChangedAt
+authorization master( global )
+{
+  field ( mandatory : create )
+   TravelID;
+
+  field ( readonly )
+   CreatedBy,
+   CreatedAt,
+   LastChangedBy,
+   LastChangedAt,
+   LocalLastChangedAt,
+   Status;
+
+  field ( readonly : update )
+   TravelID;
+
+
+  create;
+  update;
+  delete;
+
+  determination setInitialStatus on save {
+    create;
+  }
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for ZZ0303TRAVEL corresponding extensible
+  {
+    TravelID = TRAVEL_ID;
+    AgencyID = AGENCY_ID;
+    CustomerID = CUSTOMER_ID;
+    BeginDate = BEGIN_DATE;
+    EndDate = END_DATE;
+    Status = STATUS;
+    CreatedBy = CREATED_BY;
+    CreatedAt = CREATED_AT;
+    LastChangedBy = LAST_CHANGED_BY;
+    LastChangedAt = LAST_CHANGED_AT;
+    LocalLastChangedAt = LOCAL_LAST_CHANGED_AT;
+  }
+
+}
